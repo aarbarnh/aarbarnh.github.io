@@ -100,7 +100,6 @@
             top:80%;
             width:100%;
             text-align:center;
-            visibility:hidden;
             color:black;
         }
         .backimg1, .backimg2, .backimg3, .backimg4{
@@ -112,7 +111,7 @@
             width:100%;
         }
         .backimg1{
-            background-image:url('Images/armada.jpg');
+            background-color:dimgrey;
             height:100%;
         }
         .backimg2{
@@ -135,51 +134,28 @@
             padding:5px;
         }
     </style>
-    
-    <script>
-    function showContact(){
-        var visible = document.getElementById("contact");
-        if (visible.style.visibility == "hidden"){
-            document.getElementById("contact").style.visibility="visible";
-            document.getElementById("contactButton").innerHTML="Hide Contact Info";
-        }else{
-            document.getElementById("contact").style.visibility="hidden";
-            document.getElementById("contactButton").innerHTML="Show Contact Info";
-        }
-    }
-    </script>
 </head>
 <body>
-<div class="backimg1"> <!--show image as parallax-->
+<div class = backimg3> <!--show image as parallax-->
     <div class="navbar" id="Home"> <!--nav bar for links-->
     <a href="#Home">Home</a> 
     <a href="#About">About Me</a>
     <a href="#Game">Game Programming</a>
     <a href="#Computer">Computer Science</a>
+    <a href="#SIP">SIP</a>
+    <a href="#contact">Contact Info</a>
     </div> <!-- Simple Hello World for home of port-->
     
     <div class="caption">
     <span class="border">"Hello World";</span><br/><br/><br/>
-    <button type="button" class="button" onclick="showContact()" id="contactButton">Show Contact Info</button>
     </div>
-    
-    <div class="contactinfo" id="contact">
-    <h1><pre>  Contact Me!</pre></h1>
-    <pre style="color:white; text-align:center;">
-    Email: abarn93@gmail.com
-    Phone Number: 3303013489
-    
-    Further Given Upon Request
-    </pre>
-    </div>
-    
 </div> <!-- opening -->
     
 <div class="backimg2">
     <div class="heading">
     <h3 style="text-align:center;font-size:25px;letter-spacing:10px;" id="About">My Name is Aaron!</h3><br/><br/>
     </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <p class="heading" style="letter-spacing:5px; line-height:35px;">I am a student currently at UAT and pursuing ACS as a Bachelor's with Game Programming as an Associate's. C++ so far is my most well known language while also knowing Python and C#. I am learning SQL this semester and I am also teaching myself Java to make Android applications as well as HTML, CSS, and Javascript to make this site! My dream is to take my two passions, fitness and programming, and combine the two to create a gamified fitness app with RPG elements and machine learning work out suggestions.<br/><br/><br/>Check out some of my work below!<br/><br/>
+    <p class="heading" style="letter-spacing:5px; line-height:35px;">I am a student currently at UAT and pursuing Game Programming as a Bachelor's. C++ so far is my most well known language while also knowing Python and C#. I am learning SQL this semester and I am also teaching myself Java to make Android applications as well as HTML, CSS, and Javascript to make this site! My dream is to take my two passions, fitness and programming, and combine the two to create a gamified fitness app with RPG elements and machine learning work out suggestions.<br/><br/><br/>Check out some of my work below!<br/><br/>
     </p><br/><br/>
     <div class="skills">
     <h1>Skills:</h1>
@@ -195,7 +171,7 @@
 
 </div> <!-- about me -->
     
-<div class="backimg3">
+<div class="backimg1">
     <div class="heading">
     <h1 id="Game">Game Programming</h1>
     </div><br/><br/><br/><br/><br/><br/>
@@ -217,27 +193,77 @@
     </div>
 </div> <!--game programming-->
     
-<div class="backimg4">
+<div class="backimg1">
     <div class="heading">
     <h1 id="Computer">Computer Science</h1>
     </div><br/><br/><br/><br/><br/><br/>
     <div >
         <div class="row">
         <div class="column"> <!--first android app-->
-        <img src="Images/macroOne.png" style="height:50%;">    
+        <img src="Images/macroOne.png" style="height:50%; width:60%;">    
         </div>
         <div class="column"> <!--first web page-->
-        <img src="Images/portSite.png" style="height:65%; width:65%;">    
+        <img src="Images/portSite.png" style="height:50%; width:65%;">    
         </div>
         <div class="column"> <!--macro tracker v1 in visual-->
-        <img src="Images/macroTracker.png" style="width:90%; height:50%;">   
+        <img src="Images/macroTracker.png" style="width:65%; height:50%;">   
         </div>
         </div>
     </div><br/><br/><br/><br/><br/>
-    <center>
-    <button type="button" class="button" onclick="window.location.href = '#Home';">Back to the Top!</button>
-    </center>
+
 </div> <!-- computer science, finish macro tracker for an entry and try the timer-->
+    
+<div class="backimg1">
+    <div class="heading">
+    <h1 id="SIP">SIP</h1>
+    </div><br/><br/><br/>
+    <div>
+        <center>
+        <video width="1000" height="400" controls>
+            <source src="Images/sipProto.mp4" type="video/mp4">
+        </video>
+        </center>
+        <h1 style="color:black">
+            <center>
+            Objectives
+            </center>
+        </h1>
+        <p style="color:black">
+            <center>
+                <ul>
+                    Implement multiple completed games, including 3D games, using common tools, languages and software for web, console, PC, or mobile platforms.<br/><br/>
+                    Implement and analyze fundamental data structures and algorithms associated with game applications supporting gameplay mechanics.<br/><br/>
+                    Use software development processes to analyze a project problem, and to design, build and test a corresponding software solution.
+                </ul>
+            </center>
+        </p>
+        <h1 style="color:black">
+            <center>
+                Innovation Claim
+            </center>
+        </h1>
+        <p>
+            <center>
+            A mechanic for a battle royale style game that has the environment piece change over time.<br/>The pieces will be set in priority by how long a player looks at them. The pieces will be gradually faded out using shaders and their priority setting.
+            </center>
+        </p>
+    </div>
+</div> <!--sip-->
+    
+<div id="contact">
+    <h1><pre>  
+                                                            Contact Me!</pre></h1>
+    <pre style="color:white; text-align:center;">
+Email: abarn93@gmail.com
+Phone Number: 3303013489
+    
+Further Given Upon Request
+    </pre>
+    </div>
+    <center>
+    <button type="button" class="button" onclick="window.open('https://www.linkedin.com/in/aaron-barnhart-6a114b140/')" id="contactButton">LinkedIn Page</button>
+    <button type="button" class="button" onclick="window.location.href = '#Home';">Back to the Top!</button>
+    </center> <!-- contact info-->
 
     
 </body>
